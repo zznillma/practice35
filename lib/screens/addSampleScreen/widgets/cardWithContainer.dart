@@ -10,13 +10,15 @@ class CardWithContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Container(
       padding: const EdgeInsets.symmetric(
         vertical: 10,
         horizontal: 16,
       ),
-      height: 60,
-      width: 328,
+      height: height * 0.0788,
+      width: width * 0.9111,
       decoration: BoxDecoration(
           color: const Color(0xffFFFFFF),
           borderRadius: BorderRadius.circular(14),

@@ -7,12 +7,14 @@ class TakeOrder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Container(
       padding: const EdgeInsets.symmetric(
         horizontal: 17,
         vertical: 19,
       ),
-      height: 82,
+      height: height * 0.101,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Colors.white,

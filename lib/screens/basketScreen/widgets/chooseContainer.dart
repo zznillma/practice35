@@ -7,9 +7,11 @@ class ChooseWithContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Container(
-      height: 120,
-      width: 343,
+      height: height * 0.1478,
+      width: width * 0.9147,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(14),

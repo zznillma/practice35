@@ -24,7 +24,9 @@ class ChooseButton extends StatelessWidget {
         child: Text(
           title,
           style: TextStyle(
-              color: isSelect ? Colors.white : Colors.black, fontSize: 16),
+            color: isSelect ? Colors.white : Colors.black,
+            fontSize: 16,
+          ),
         ),
       ),
     );

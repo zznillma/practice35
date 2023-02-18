@@ -7,9 +7,11 @@ class ChooseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: 120,
-      width: 343,
+      height: height * 0.1478,
+      width: width * 0.9147,
       child: Card(
         margin: EdgeInsets.zero,
         elevation: 5,

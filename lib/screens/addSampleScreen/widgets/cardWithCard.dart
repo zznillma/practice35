@@ -2,16 +2,19 @@ import 'package:flutter/material.dart';
 
 class CardWithCard extends StatelessWidget {
   final bool isShadow;
-  
+
   const CardWithCard({
-    super.key,  required this.isShadow,
+    super.key,
+    required this.isShadow,
   });
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: 60,
-      width: 328,
+      height: height * 0.0788,
+      width: width * 0.9111,
       child: Card(
         margin: EdgeInsets.zero,
         elevation: isShadow ? 3 : 0,

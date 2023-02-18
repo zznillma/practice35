@@ -8,10 +8,12 @@ class SelectCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Container(
       padding: const EdgeInsets.all(4),
-      height: 44,
-      width: 328,
+      height: height * 0.0578,
+      width: width * 0.9111,
       decoration: BoxDecoration(
         color: const Color(0xffFFFFFF),
         borderRadius: BorderRadius.circular(14),
